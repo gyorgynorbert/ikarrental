@@ -21,15 +21,12 @@ IkarRental is a web-based application designed to facilitate the rental of vehic
    cd ikarrental
    ```
 
-3. **Set Up the Environment:**
-   - Ensure you have a web server with PHP support (e.g., Apache) and a MySQL database.
-   - Configure the database connection settings in the relevant PHP files.
+3. **Start the server:**
+    ```bash
+    php -S localhost:8080
+    ```
 
-4. **Deploy the Application:**
-   - Place the project files in your web server's root directory.
-   - Import the provided SQL schema to set up the necessary database tables.
-
-5. **Access the Application:**
+4. **Access the Application:**
    - Open your web browser and navigate to the application's URL to start using IkarRental.
 
 ## Usage
@@ -37,6 +34,7 @@ IkarRental is a web-based application designed to facilitate the rental of vehic
 - **Register an Account:** Create a new user account to access the platform's features.
 - **Browse Vehicles:** View the list of available Ikarus buses for rent.
 - **Manage Profile:** Update your personal information and view rental history.
+- **Admin features:** The email is ```admin@ikarrental.com``` and the password is ```admin```
 - **Logout:** Securely end your session when finished.
 
 ## Project Structure
