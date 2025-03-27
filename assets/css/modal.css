@@ -1,0 +1,111 @@
+@import url(/assets/css/vars.css);
+
+.login-signup-text {
+    color: var(--mauve);
+}
+
+.hidden {
+    visibility: hidden;
+    max-height: 0;
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--surface0);
+    color: var(--text);
+    padding: 2rem;
+    border-radius: 25px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    width: 90%;
+    max-width: 400px;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+::placeholder {
+    color: var(--mauve);
+    opacity: .5;
+}
+
+.modal.active, .modal-overlay.active {
+    opacity: 1; 
+    visibility: visible;
+}
+
+.modal input[type="text"],
+.modal input[type="password"],
+.modal input[type="email"] {
+    width: 100%;
+    padding: 0.75rem;
+    margin: 0.5rem 0 1rem 0;
+    border: 1px solid var(--surface1);
+    border-radius: 25px;
+    background-color: var(--surface0);
+    color: var(--text);
+    font-size: 1rem;
+}
+
+.modal input[type="text"]:focus,
+.modal input[type="password"]:focus, 
+.modal input[type="email"]:focus {
+    outline: none;
+    border: 1px solid var(--mauve);
+}
+
+.modal button[type="submit"] {
+    background-color: var(--mauve);
+    color: var(--mantle);
+    border: none;
+    border-radius: 25px;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease-in-out;
+}
+.modal button[type="submit"]:hover {
+    background-color: var(--pink);
+} 
+
+.modal-content {
+    background: var(--surface0);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    width: 100%;
+    max-width: 400px;
+    
+}
+
+.close-modal {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--mauve);
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    padding: 0;
+    transition: color 0.3s ease-in-out;
+}
+
+.close-modal:hover {
+    color: var(--red);
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 999;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}

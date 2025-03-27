@@ -1,0 +1,33 @@
+.navbar-profile-container {
+    margin-right: 5rem;
+    cursor: pointer;
+    border-radius: 25px 25px 0px 0px;
+    padding: 10px;
+    position: relative;
+    transition: all .3s ease-in-out;
+}
+
+.navbar-profile-container:hover {
+    background-color: var(--crust);
+}
+
+.navbar-profile {
+    display: flex;
+    align-items: center;
+}
+
+.name {
+    color: var(--mauve);
+    margin-right: .5rem;
+    pointer-events: none;
+    user-select: none;
+}
+
+.navbar-profile-image > img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    pointer-events: none;
+    user-select: none;
+}

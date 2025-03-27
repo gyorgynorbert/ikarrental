@@ -1,0 +1,16 @@
+{
+    "cars": [
+        {
+            "id": "1",
+            "brand": "Porsche",
+            "model": "911 GT3",
+            "transmission": "K\u00e9zi",
+            "year": "2024",
+            "fuel_type": "Benzin",
+            "passengers": "4",
+            "daily_price_huf": "400000",
+            "thumbnail": "https:\/\/pictures.porsche.com\/rtt\/iris?COSY-EU-100-1711coMvsi60AAt5FwcmBEgA4qP8iBUDxPE3Cb9pNXABuN9dMGF4tl3U0%25z8rMHIspbWvanYb%255y%25oq%25vSTmjMXD4qAZeoNBPUSfUx4RmHlCgI7ZNxx7e2Hk1X1UzQKU9YnfuruTh5yPewdFHCvNzxDJDGXoq1nonr6FObXF7wRuT0cJYx7e2HfZK1UzQKbXLbsqYSgJC0iO5M1A5HcTCkazJKf2GLmeRSPQrIAEwRAyYib32yl3URN%25GKCW1TG87hXuci60O%25"
+        }
+    ],
+    "last_id": "1"
+}

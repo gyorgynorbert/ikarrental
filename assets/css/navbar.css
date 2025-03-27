@@ -1,0 +1,86 @@
+@import url(/assets/css/vars.css);
+@import url(/assets/css/modal.css);
+@import url(/assets/css/navbar_dropdown.css);
+@import url(/assets/css/navbar_profile.css);
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 25px;
+    background-color: var(--crust);
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 25px;
+    background-color: var(--mauve);
+    width: 100px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--surface0); 
+}
+
+.navbar-wrapper {
+    background-color: var(--crust);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+    height: 5rem;
+    width: 100%;
+}
+.navbar-logo {
+    margin-left: 5rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: var(--mauve);
+    font-weight: 700;
+}
+
+.navbar-menu {
+    display: flex;
+    align-items: center;
+}
+
+.hamburger {
+    display: none;
+}
+
+.navbar-menu-item {
+    list-style: none;
+}
+
+button#openRegisterBtn, button#openLoginBtn {
+    border: 2px solid;
+    border-radius: 50px;
+    padding: 12px 24px;
+    font-size: .9rem;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: transparent;
+    border-color: var(--mauve);
+    color: var(--mauve);
+    margin-right: 10px;
+    transition: all .3s ease-in-out;
+    transition: all .3s;
+}
+
+button#openRegisterBtn {
+    margin-right: 5rem;
+} 
+
+button#openLoginBtn:hover, button#openRegisterBtn:hover {
+    background-color: var(--mauve);
+    color: var(--crust);
+}
+
+button#openLoginBtn:hover {
+    background-color: var(--mauve);
+    color: var(--crust);
+}
+
+li a i {
+    margin-right: 2px;
+    font-size: 1rem;
+}
